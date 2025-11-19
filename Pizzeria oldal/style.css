@@ -1,0 +1,39 @@
+body, html{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+header{
+    background-image: url(./IMG/pizzakep.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+header p{
+    position: relative;
+    top: 3%;
+    left: 2%;
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 300%;
+}
+
+#tortenet{
+    background-color: #222222;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    padding-top: 50px;
+}
+
+#tortenet-cim{
+    text-align: right;
+}
+
+#tortenet-cim:first-child{
+    font-size: 30px;
+}
