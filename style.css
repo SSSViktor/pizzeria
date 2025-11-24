@@ -23,17 +23,81 @@ header p{
 #tortenet{
     background-color: #222222;
     height: 350px;
+    padding-top: 50px;
+}
+
+#tortenet-section{
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
     grid-gap: 30px;
-    padding-top: 50px;
+    width: 75%;
+    margin: auto;
 }
 
 #tortenet-cim{
     text-align: right;
 }
 
-#tortenet-cim:first-child{
+#tortenet-asztal{
+    margin-top: 10px;
+    font-weight:bolder;
+}
+
+#menu{
+    background-color: black;
+    height: 425px;
+}
+
+#menu-section{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#menu-gombok{
+    display: flex;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+#menu-gombok div{
+    height:50px;
+    width: 25%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#specialitasok{
+    background-color: #222222;
+    text-align: center;
+    padding: 50px;
+}
+
+#special-grid{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3,1fr) repeat(1,20px);
+}
+
+.cim{
     font-size: 30px;
+    margin-bottom: 5px;
+}
+.cim span{
+    letter-spacing: -2.5px;
+}
+
+.alcim{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.szoveg{
+    line-height: 1.6;
 }
