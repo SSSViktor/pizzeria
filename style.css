@@ -123,6 +123,46 @@ header p{
     grid-row: 3 / 5;
 }
 
+footer{
+    background-color: black;
+}
+
+#footer-section{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#varunk{
+    text-align: right;
+    width: 25%;
+}
+
+#nyitvatartas{
+    width: 40%;
+}
+
+#nyitvatartas >p:first-child{
+    margin-bottom: 20%;
+    color: red;
+    background-color: red;
+}
+
+#nyitvatartas-napok div{
+    border-top: 1px solid rgb(100, 100, 100);
+}
+
+#asztalfoglalas{
+    width: 25%;
+}
+
+#footer-bottom{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
 .cim{
     font-size: 30px;
     margin-bottom: 5px;
@@ -138,4 +178,9 @@ header p{
 
 .szoveg{
     line-height: 1.6;
+}
+
+hr{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
