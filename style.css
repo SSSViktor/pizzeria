@@ -84,9 +84,10 @@ header p{
     padding: 50px;
 }
 
-#specialitasok-section{
-    height: 100%;
+.specialitasok-section{
+    max-height:max-content;
     width: 100%;
+    border: red solid 10px;
 }
 
 #special-grid{
@@ -95,7 +96,7 @@ header p{
     height: 100%;
     margin: auto;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 0.6fr 1fr 0.2fr;
 }
 
