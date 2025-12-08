@@ -80,12 +80,10 @@ header p{
 #specialitasok{
     background-color: #222222;
     text-align: center;
-    height: 50vh;
     padding: 50px;
 }
 
 .specialitasok-section{
-    max-height:max-content;
     width: 100%;
     border: red solid 10px;
 }
@@ -93,7 +91,7 @@ header p{
 #special-grid{
     display: grid;
     width: 60%;
-    height: 100%;
+    height: 700px;
     margin: auto;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
