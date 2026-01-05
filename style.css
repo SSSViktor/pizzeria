@@ -220,3 +220,28 @@ a{
     text-decoration: none;
     color: white;
 }
+
+@media (max-width: 992px) {
+    #tortenet-section{
+        grid-template-columns: 1fr 4fr;
+    }
+    #special-grid{
+        width: 100%;
+    }
+    #footer-bottom{
+        width: 90%;
+    }
+    #varunk-special{
+        font-size: 20px;
+    }
+    header >p:first-child{
+        font-size: 200%;
+    }
+    #menu-gombok{
+        margin-top: 15px;
+    margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+
+}
