@@ -263,9 +263,33 @@ a{
     #menu-gombok div{
         width: 70%;
     }
+    #footer-section{
+        display: block;
+        width: 95%;
+    }
+    #footer-section div{
+        width: 100%;
+    }
+    #nyitvatartas >p:first-child{
+        margin-bottom: 5%;
+    }
+    #asztalfoglalas{
+        margin-top: 5%;
+    }
     .cim{
         font-size: 25px;
         margin-bottom: 5px;
         font-family: "Stack Sans Headline", sans-serif;
+    }
+    .alcim{
+        font-size: 15px;
+    }
+    hr{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    #specialitasok{
+        padding: 5px;
+        padding-top: 15px;
     }
 }
