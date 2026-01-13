@@ -17,7 +17,31 @@
 
         <header>
             <p>PIZZÉRIA</p>
-            <p id="ham-menu"><a href="#tortenet">KEZDŐLAP</a> / <a href="#menu">MENÜ</a> / <a href="#footer-section">RÓLUNK</a> / <a href="#footer-bottom">KAPCSOLAT</a></p>
+            <p id="ham-menu"><a href="#tortenet">KEZDŐLAP</a> / <a href="#menum">MENÜ</a> / <a href="#footer-section">RÓLUNK</a> / <a href="#footer-bottom">KAPCSOLAT</a></p>
+
+            <div id="menuToggle">
+                <input type="checkbox" id="menuCheckbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <li>
+                    <a href="#tortenet">
+                      <label for="menuCheckbox" onclick="this.parentNode.click();">KEZDŐLAP</label>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#menum">
+                      <label for="menuCheckbox" onclick="this.parentNode.click();">MENÜ</label>
+                    </a>
+                  </li>
+                  <li><a href="#footer-section"><label for="menuCheckbox">RÓLUNK</label></a></li>
+                  <li>
+                    <a href="#footer-section"><label for="menuCheckbox">KAPCSOLAT</label></a>
+                  </li>
+                </ul>
+            </div>
+
         </header>
 
         <main>
@@ -37,7 +61,7 @@
                 </div>
             </div>
 
-            <div id="menu">
+            <div id="menum">
                 <div id="menu-section">
                     <p class="cim"><span>---</span> MENÜ <span>---</span></p>
                     <p class="alcim">Ajánlatunk</p>
