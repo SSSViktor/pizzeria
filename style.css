@@ -6,6 +6,7 @@ body, html{
 p{
     margin: 0;
 }
+/*Header--------*/
 header{
     background-image: url(./IMG/pizzakep.jpg);
     height: 40vh;
@@ -20,20 +21,18 @@ header >p:first-child{
     font-family: "Stack Sans Headline", sans-serif;
     font-size: 300%;
 }
-
 #ham-menu{
     position: absolute;
     top: 4%;
     right: 2%;
     max-width: fit-content;
 }
-
+/*Tortenet--------*/
 #tortenet{
     background-color: #222222;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
 #tortenet-section{
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -42,21 +41,18 @@ header >p:first-child{
     width: 75%;
     margin: auto;
 }
-
 #tortenet-cim{
     text-align: right;
 }
-
 #tortenet-asztal{
     margin-top: 10px;
     font-weight:bolder;
     font-family: "Stack Sans Headline", sans-serif;
 }
-
+/*Menu--------*/
 #menum{
     background-color: black;
 }
-
 #menu-section{
     width: 60%;
     height: 100%;
@@ -64,7 +60,6 @@ header >p:first-child{
     text-align: center;
     padding: 2%;
 }
-
 #menu-gombok{
     display: flex;
     margin: auto;
@@ -73,7 +68,6 @@ header >p:first-child{
     justify-content: space-between;
     font-family: "Stack Sans Headline", sans-serif;
 }
-
 #menu-gombok div{
     height:50px;
     width: 25%;
@@ -82,17 +76,15 @@ header >p:first-child{
     justify-content: center;
     align-items: center;
 }
-
+/*Specialitasok--------*/
 #specialitasok{
     background-color: #222222;
     text-align: center;
     padding: 50px;
 }
-
 .specialitasok-section{
     width: 100%;
 }
-
 #special-grid{
     display: grid;
     width: 60%;
@@ -102,47 +94,25 @@ header >p:first-child{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 0.1fr 1fr 0fr;
 }
-
 .grid-elem p{
     position: relative;
     bottom: 7%;
 }
-
 #special-grid img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-#pizza1{
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-}
-
-#vorosbors{
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-}
-
-#vegyeszoldseg{
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-}
-
-#pizza2{
-    grid-column: 2 / 3;
-    grid-row: 2 / 4;
-}
-
-#eloetel{
-    grid-column: 3 / 4;
-    grid-row: 3 / 5;
-}
-
+/*Specialitasok grid elemei--------*/
+#pizza1{ grid-column: 1 / 3; grid-row: 1 / 2;}
+#vorosbors{ grid-column: 3 / 4; grid-row: 1 / 3;}
+#vegyeszoldseg{ grid-column: 1 / 2; grid-row: 2 / 4;}
+#pizza2{ grid-column: 2 / 3; grid-row: 2 / 4;}
+#eloetel{ grid-column: 3 / 4; grid-row: 3 / 5;}
+/*Footer--------*/
 footer{
     background-color: black;
 }
-
 #footer-section{
     width: 75%;
     padding-top: 5%;
@@ -150,42 +120,35 @@ footer{
     display: flex;
     justify-content: space-between;
 }
-
 #varunk{
     text-align: right;
     width: 25%;
 }
-
 #nyitvatartas{
     width: 40%;
 }
-
 #nyitvatartas >p:first-child{
     margin-bottom: 15%;
 }
-
 #nyitvatartas-napok div{
     border-top: 1px solid rgb(100, 100, 100);
 }
 #nyitvatartas-napok >div:first-child{
     border: 0;
 }
-
 #asztalfoglalas{
     width: 25%;
 }
-
 #asztalfoglalas p{
     margin-bottom: 5%;
 }
-
 #footer-bottom{
     width: 60%;
     margin: auto;
     text-align: center;
     padding-bottom: 5%;
 }
-
+/*Szoveg--------*/
 .cim{
     font-size: 30px;
     margin-bottom: 5px;
@@ -194,18 +157,18 @@ footer{
 .cim span{
     letter-spacing: -2.5px;
 }
-
 .alcim{
     font-size: 20px;
     margin-bottom: 5px;
     color: rgb(120, 120, 120);
 }
-
 .szoveg{
     line-height: 1.6;
     color: rgb(160, 160, 160);
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
-
 hr{
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -213,12 +176,10 @@ hr{
     height: 1px;
     border: 0;
 }
-
 a{
     text-decoration: none;
     color: white;
 }
-
 #menuToggle{
     display: none;
 }
@@ -253,7 +214,33 @@ a{
 
 @media (max-width: 768px) {
     #special-grid{
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    #pizza1{
+        height: 400px;
+        margin-bottom: 15px;
+        order: 1;
+    }
+    #vorosbors{
+        height: 900px;
+        margin-bottom: 15px;
+        order: 4;
+    }
+    #vegyeszoldseg{
+        height: 500px;
+        margin-bottom: 15px;
+        order: 2;
+    }
+    #pizza2{
+        height: 450px;
+        margin-bottom: 15px;
+        order: 3;
+    }
+    #eloetel{
+        height: 250px;
+        margin-bottom: 15px;
+        order: 5;
     }
     .grid-elem p{
         position: relative;
@@ -261,6 +248,7 @@ a{
     }
     #tortenet-section{
         display: block;
+        width: 90%;
     }
     #menu-section{
         width: 90%;
@@ -299,12 +287,16 @@ a{
         margin-bottom: 2vh;
     }
     #specialitasok{
-        padding: 5px;
+        padding: 15px;
         padding-top: 15px;
+    }
+    #varunk-special{
+        font-size: 35px;
     }
 }
 
-/*--------------------------------------------------------*/
+/*--------------------------------------------------------
+                    Hamburger menu*/
 
 #menuToggle
 {
@@ -343,15 +335,12 @@ a{
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
   
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
 #menuToggle span
 {
   display: block;
@@ -360,7 +349,7 @@ a{
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: #ffffff;
   border-radius: 3px;
   
   z-index: 1;
@@ -382,10 +371,6 @@ a{
   transform-origin: 0% 100%;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
 #menuToggle input:checked ~ span
 {
   opacity: 1;
@@ -419,7 +404,6 @@ a{
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
@@ -438,9 +422,6 @@ a{
   cursor: pointer;
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked ~ ul
 {
   transform: translate(-50%, 0);
